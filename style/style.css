@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    color: #171818;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3ebeb;
+    display: flex;
+}
+.container {
+    background-color: white;
+    border: 1px ridge #171818;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    min-width: 500px;
+    margin: 40px;
+    padding: 20px;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container .title {
+    margin: auto;
+}
+.container .input-container {
+    border: 1px ridge #171818;
+    border-radius: 8px;
+    display: flex;
+    padding: 8px 20px;
+    margin: 8px;
+}
+.input-container input {
+    font-size: large;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    margin-left: 20px;
+}
+.hamburger img {
+    width: 30px;
+}
+.controls {
+    display: grid;
+    grid-template-columns: 73% 25%;
+}
+.state {
+    display: grid;
+    height: 40px;
+    padding: 8px 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.state span {
+    cursor: pointer;
+    margin: 0 8px;
+    font-weight: 600;
+}
+.controls button{
+    cursor: pointer;
+    border: 1px ridge #171818;
+    background-color: #171818;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.tasks-container {
+    border-top: 1px ridge #9E9E9E;
+    margin: 8px 11px;
+}
+.tasks-container .task{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 96% 5%;
+    margin: 5px 11px;
+    padding: 10px 0px;
+    height: 50px;
+}
+.task label {
+    display: flex;
+}
+.task input {
+    margin-right: 14px;
+}
+.settings img {
+    width: 20px;
+    cursor: pointer;
+}
+.task-setting {
+    background-color: white;
+    border: 1px ridge #171818;
+    border-radius: 8px;
+    background-color: white;
+    list-style: none;
+    width: 108px;
+    padding: 9px 15px;
+    color: black;
+    position: absolute;
+}
+.task-setting li {
+    display: flex;
+    gap: 8px;
+}
+.task-setting li:first-child{
+    margin-bottom: 10px;
+}
+.d-none {
+    display: none;
+}
+
+li input {
+    line-height: 35px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.checked {
+    text-decoration: line-through;
+}

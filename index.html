@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h2>To Do List</h2></div>
+        <div class="input-container">
+            <div class="hamburger"><img src="./assets/icons/hamburger.png" alt=""></div>
+            <div><input type="text" class="one-to-do" placeholder="Cook rice"></div>
+        </div>
+        <div class="controls">
+            <div class="state">
+                <span id="all" class="active">All</span>
+                <span id="pending" class="active">Pending</span>
+                <span id="completed" class="active">Completed</span>
+            </div>
+            <button id="clear_all" class="clear_all">Clear</button>
+        </div>
+        <ul class="tasks-container" id="task-container">
+            <!-- AUTO GENERATED -->
+        </ul>
+    </div>
+    <script src="./script/utils.js"></script>
+    <script src="./script/db.js"></script>
+    <script src="./script/TaskElement.js"></script>
+    <script src="./script/app.js"></script>
+</body>
+</html>
